@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,700&display=swap");
+
+@import "normalize";
+@import "layout";
+@import "elements";
+
+body {
+  font: 300 14px/1.6 "Lato", sans-serif;
+  background-image: url(../img/bg.jpg);
+  background-color: #333a4c;
+  background-size: cover;
+  color: #8d91a3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  //   border: 1px solid red;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+/* Layout */
+.ba-container {
+  padding-top: 100px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.active {
+	 color: #fff; 
+		border-bottom: 2px solid #fff;
+		svg{
+			fill: #fff;
+		}
+	}
+
+.ba-card {
+  display: flex;
+  flex-direction: column;
+
+  .ba-card-tabs {
+    background-color: #2b3040;
+    display: flex;
+
+    .ba-tab {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 33px;
+      padding-bottom: 33px;
+      width: 33.3333333%;
+      height: 115px;
+      font-size: 16px;
+
+      svg {
+		  fill: #8d91a3;
+		
+      }
+    }
+  }
+
+  .ba-card-item {
+    background-color: #212534;
+    display: flex;
+
+    .ba-card-img {
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 57px 5px 63px 47px;
+    }
+    .ba-card-info {
+      display: flex;
+      flex-direction: column;
+      padding: 58px 41px 63px 25px;
+      max-width: 379px;
+
+      .ba-card-name {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        h1 {
+          font-size: 32px;
+          color: #fff;
+          font-weight: 400;
+        }
+        h5 {
+          font-size: 14px;
+          color: #fff;
+          font-weight: 400;
+        }
+      }
+      .ba-card-text {
+        font-size: 14px;
+        line-height: 22px;
+        padding-top: 37px;
+      }
+      .ba-card-price {
+        display: flex;
+        padding-top: 59px;
+
+        .ba-price {
+          display: flex;
+          flex-direction: column;
+
+          .ba-sale {
+            font-size: 12px;
+            color: #e0c33d;
+          }
+          .ba-final-price {
+            font-size: 32px;
+            color: #fff;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
