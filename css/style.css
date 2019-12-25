@@ -679,7 +679,8 @@ h6 {
       height: 115px;
       font-size: 16px; }
       .ba-card .ba-card-tabs .ba-tab svg {
-        fill: #8d91a3; }
+		  fill: #8d91a3; }
+
   .ba-card .ba-card-item {
     background-color: #212534;
     display: -webkit-box;
